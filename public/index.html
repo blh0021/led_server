@@ -1,0 +1,47 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Led Sign</h1>
+        <form method="POST" action="/send">
+            <div class="form-group">
+                <label for="color">Color</label>
+                <select class="form-control" id="color" name="color">
+                    <option>red</option>
+                    <option>bright red</option>
+                    <option>orange</option>
+                    <option>bright orange</option>
+                    <option>green</option>
+                    <option>bright green</option>
+                    <option>layer mix rainbow</option>
+                    <option>bright layer mix rainbow</option>
+                    <option>vertical mix</option>
+                    <option>saw tooth mix</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="transition">Transition</label>
+                <select class="form-control" id="transition" name="transition">
+                    <option>cyclic</option>
+                    <option>immediate</option>
+                    <option>scroll up</option>
+                    <option>scroll down</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="submit" />
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
